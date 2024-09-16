@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ----- VARIABLES, MIXINS AND PLACEHOLDERS ---- */
+/* Colors */
+/* ----- GENERAL STYLE ----- */
+body {
+  background: #f2f2f2;
+  color: blue;
+}/*# sourceMappingURL=main.css.map */

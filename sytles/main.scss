@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ----- VARIABLES, MIXINS AND PLACEHOLDERS ---- */
+$roboto: "Roboto", sans-serif;
+$bebas: "Bebas Neue", sans-serif;
+
+/* Colors */
+$lightOrange: #ffd170;
+$orange: #e18525;
+$darkOrange: #b46b1d;
+
+$lightBlue: #229aa2;
+$blue: #006972;
+$darkBlue: #02545a;
+
+$lightGreen: #1db196;
+$green: #00403f;
+$darkGreen: #003332;
+
+$white: #f2f2f2;
+
+/* ----- GENERAL STYLE ----- */
+body {
+  background: $white;
+
+  color: blue;
+
+
+}
