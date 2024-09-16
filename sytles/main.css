@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ----- VARIABLES, MIXINS AND PLACEHOLDERS ---- */
+/* Colors */
+/* Mixins */
+/* ----- GENERAL STYLE ----- */
+body {
+  background: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+}
+body .wrapper {
+  width: 980px;
+  margin: 5rem auto;
+  display: flex;
+}
+body .wrapper .box1 {
+  background: #e18525;
+  padding: 2rem;
+  color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
+body .wrapper .box1 .box1_circle {
+  background: #b46b1d;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #ffd170;
+  position: relative;
+}
+body .wrapper .box1 .box1_circle .fa-solid {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 2.5px;
+  left: 15px;
+}
+body .wrapper .box1 .box1_button {
+  background: #f2f2f2;
+  color: #e18525;
+  margin-top: 4rem;
+  padding: 1rem;
+  width: 150px;
+  border-radius: 30px;
+  text-align: center;
+}
+body .wrapper .box2 {
+  background: #006972;
+  padding: 2rem;
+  color: #f2f2f2;
+}
+body .wrapper .box2 .box2_circle {
+  background: #02545a;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #229aa2;
+  position: relative;
+}
+body .wrapper .box2 .box2_circle .fa-solid {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 2.5px;
+  left: 15px;
+}
+body .wrapper .box2 .box2_button {
+  background: #f2f2f2;
+  color: #006972;
+  margin-top: 4rem;
+  padding: 1rem;
+  width: 150px;
+  border-radius: 30px;
+  text-align: center;
+}
+body .wrapper .box3 {
+  background: #00403f;
+  padding: 2rem;
+  color: #f2f2f2;
+  border-radius: 0 10px 10px 0;
+}
+body .wrapper .box3 .box3_circle {
+  background: #003332;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #1db196;
+  position: relative;
+}
+body .wrapper .box3 .box3_circle .fa-solid {
+  position: absolute;
+  font-size: 1.3rem;
+  top: 2.5px;
+  left: 15px;
+}
+body .wrapper .box3 .box3_button {
+  background: #f2f2f2;
+  color: #00403f;
+  margin-top: 4rem;
+  padding: 1rem;
+  width: 150px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  font-weight: 100;
+  padding: 2rem 0;
+}/*# sourceMappingURL=main.css.map */
