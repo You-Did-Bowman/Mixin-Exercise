@@ -23,8 +23,92 @@ $darkGreen: #003332;
 
 $white: #f2f2f2;
 
+/* Mixins */
+@mixin boxStyle ($BGcolor) {
+    background: $BGcolor;
+    padding: 2rem;
+    color: $white;
+}
+
+@mixin circleStyle($BGcolor, $color) {
+  background: $BGcolor;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: $color;
+  position: relative;
+
+  .fa-solid {
+    position: absolute;
+    font-size: 1.3rem;
+    top: 2.5px;
+    left: 15px;
+  }
+}
+
+@mixin buttonStyle($color) {
+  background: $white;
+  color: $color;
+  margin-top: 4rem;
+  padding: 1rem;
+  width: 150px;
+  border-radius: 30px;
+  text-align: center;
+}
+
 /* ----- GENERAL STYLE ----- */
 body {
   background: $white;
-  color: blue;
+  font-family: $roboto;
+
+  .wrapper {
+    width: 980px;
+    margin: 5rem auto;
+    display: flex;
+
+    .box1 {
+      @include boxStyle($orange);
+      border-radius: 10px 0 0 10px;
+
+      .box1_circle {
+        @include circleStyle($darkOrange, $lightOrange);
+      }
+
+      .box1_button {
+        @include buttonStyle($orange)
+      }
+    }
+
+    .box2 {
+        @include boxStyle($blue);
+
+        .box2_circle {
+            @include circleStyle($darkBlue, $lightBlue )
+        }
+
+        .box2_button {
+            @include buttonStyle($blue)
+        }
+    }
+
+    .box3 {
+        @include boxStyle($green);
+        border-radius: 0 10px 10px 0;
+
+        .box3_circle {
+            @include circleStyle ($darkGreen, $lightGreen);
+        }
+
+        .box3_button {
+            @include buttonStyle($green)
+        }
+    }
+  }
 }
+
+h2 {
+    font-family: $bebas;
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 2rem 0;
+  }
